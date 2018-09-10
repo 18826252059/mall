@@ -5,11 +5,11 @@
     <breadcrumb class="breadcrumb-container"></breadcrumb>
 
     <div class="right-menu">
-
+<!--
       <el-tooltip effect="dark" content="全屏" placement="bottom">
         <screenfull class="screenfull right-menu-item"></screenfull>
       </el-tooltip>
-
+-->
       <el-dropdown class="avatar-container right-menu-item" trigger="click">
         <div class="avatar-wrapper">
           <img class="user-avatar" :src="avatar+'?imageView2/1/w/80/h/80'">
@@ -21,6 +21,7 @@
               主页
             </router-link>
           </el-dropdown-item>
+          <!--
           <el-dropdown-item>
             <a target='_blank' href="https://github.com/linlinjava/litemall">
               GitHub
@@ -31,6 +32,7 @@
               码云
             </a>
           </el-dropdown-item>
+          -->
           <el-dropdown-item divided>
             <span @click="logout" style="display:block;">退出登录</span>
           </el-dropdown-item>
